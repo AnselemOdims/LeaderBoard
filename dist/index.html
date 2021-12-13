@@ -4,9 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="./index.css">
+  <script
+			src="https://kit.fontawesome.com/fe0a3092c6.js"
+			crossorigin="anonymous"
+		></script>
 <script defer src="bundle.js"></script></head>
 <body>
-  
+  <main>
+    <h1>Leaderboard</h1>
+    <div class="main-container">
+    <section class="results">
+      <div class="refresh-container">
+        <h2>Recent Scores</h2>
+        <div class="refresh">
+          <button class="refresh-btn"><span id="refresh">Refresh <i class="fas fa-sync-alt"></i></span> <span class="spin"></span></button>
+        </div>
+      </div>
+      <div class="scores-container">
+        <ul class="list">
+          <li>John Doe: 100</li>
+          <li>John Doe: 55</li>
+          <li>Jane Doe: 80</li>
+          <li>John Doe: 70</li>
+          <li>John Doe: 55</li>
+          <li>Jude Doe: 60</li>
+          <li>John Doe: 75</li>
+          <li>Jane Doe: 55</li>
+        </ul>
+      </div>
+    </section>
+    <section class="add">
+      <h2 class="score-heading">Add your score</h2>
+      <div class="add-form">
+        <form autocomplete="off">
+          <p>
+          <input type="text" class="form-control" placeholder="Your Name" id='name'>
+        </p>
+        <p>
+          <input type="number" class="form-control" placeholder="Your Score" id='score'>
+        </p>
+        <button class="submit-btn"><span class="submit">Submit</span> <span class="spinner"></span></button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="modal"></div>
+  </main>
 </body>
 </html>
