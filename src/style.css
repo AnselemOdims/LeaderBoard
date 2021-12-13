@@ -1,0 +1,52 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+html {
+  overflow-x: hidden;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  margin: 5% 10%;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 50px;
+  margin: 5% auto;
+}
+
+.results {
+  width: 70%;
+}
+
+.refresh-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scores-container {
+  border: solid 3px gray;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.add > .score-heading {
+  margin-bottom: 20px;
+}
