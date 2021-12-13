@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AnselemOdims/LeaderBoard/issues"
   },
-  "homepage": "https://github.com/AnselemOdims/LeaderBoard#readme"
+  "homepage": "https://github.com/AnselemOdims/LeaderBoard#readme",
+  "devDependencies": {
+    "hint": "^6.1.9"
+  }
 }
