@@ -65,6 +65,7 @@ export default class Helper {
       throw new Error(err);
     } finally {
       Utils.stopLoader(refresh, spin, 'Refresh <i class="fas fa-sync-alt">');
+      Utils.inputFocus();
     }
   }
 }
