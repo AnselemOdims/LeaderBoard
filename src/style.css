@@ -112,3 +112,72 @@ h2 {
   border-radius: 2px;
   font-weight: 500;
 }
+
+/* Add Section */
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add > .score-heading {
+  margin-bottom: 20px;
+}
+
+.add > .add-form {
+  width: 100%;
+}
+
+.add > .add-form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add > .add-form > form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-left: solid 7px gray;
+  font-family: var(--font);
+  border-radius: 2px;
+}
+
+.add > .add-form > form input::-webkit-outer-spin-button,
+.add > .add-form > form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add > .add-form > form input:focus {
+  outline: none;
+  border-left: solid 7px var(--primary-color-2);
+}
+
+.add > .add-form > form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.add > .add-form > form > button {
+  padding: 12px;
+  width: 30%;
+  align-self: flex-end;
+  background: var(--accent-color);
+  border: none;
+  color: #fff;
+  font-family: var(--font);
+  font-size: 1rem;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+}
+
+.add > .add-form > form > button:hover {
+  cursor: pointer;
+  background: var(--primary-color-2);
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.add > .add-form > form > button:focus {
+  outline: none;
+  background: var(--neutral-color-1);
+}
