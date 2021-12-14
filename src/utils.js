@@ -80,12 +80,12 @@ export default class Utils {
    */
   static showModal(result) {
     Utils.inputChecker();
-    const elem = document.querySelector('.modal');
+    const elem = document.querySelector('#modal');
     elem.innerHTML = result;
-    elem.style.top = '-7vh';
+    elem.style.top = '5px';
     setTimeout(() => {
       elem.style.top = '-100vh';
-    }, 3000);
+    }, 3500);
   }
 
   /**
