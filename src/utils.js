@@ -26,4 +26,13 @@ export default class Utils {
     elem2.classList.remove('loading-spinner');
     elem1.innerHTML = value;
   }
+
+  /**
+   * @function render - handles the rendering of the server response on the DOM
+   * @param {Array} data - the array response from the server
+   */
+  static render(data) {
+    document.querySelector('.list').innerHTML = data.map((result) => `<li>${result.user} : ${result.score}</li>`)
+      .join('');
+  }
 }
