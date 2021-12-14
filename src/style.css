@@ -14,6 +14,7 @@
   --primary-color-2: #f55b8c;
   --accent-color: #f882a7;
   --neutral-color-1: #550f24;
+  --neutral-color-2: #1d060d;
   --white: #fff;
   --font: 'Poppins', sans-serif;
 }
@@ -56,6 +57,11 @@ h2 {
 }
 
 /* Results section */
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -250,4 +256,26 @@ footer {
   footer {
     font-size: 11px;
   }
+}
+
+.dark {
+  background: var(--neutral-color-2) !important;
+  color: var(--primary-color-1) !important;
+}
+
+.white {
+  background: var(--neutral-color-1) !important;
+}
+
+.input-dark {
+  background: var(--primary-color-1) !important;
+}
+
+.input-dark:focus {
+  border-left: solid 7px var(--neutral-color-1) !important;
+}
+
+.dark-control {
+  font-size: 25px;
+  cursor: pointer;
 }
