@@ -1,3 +1,6 @@
+/**
+ * @class FetchWrapper - class to handle fetch methods
+ */
 export default class FetchWrapper {
   constructor(baseURL) {
     this.baseURL = baseURL;
