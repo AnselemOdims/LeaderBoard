@@ -23,7 +23,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://anselemodims.github.io/LeaderBoard/dist/)
+[Live Demo Link](https://anselemodims.github.io/LeaderBoard/)
 
 
 ## Getting Started
