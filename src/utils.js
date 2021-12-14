@@ -34,7 +34,8 @@ export default class Utils {
    * @param {Array} data - the array response from the server
    */
   static render(data) {
-    document.querySelector('.list').innerHTML = data.map((result) => `<li>${result.user} : ${result.score}</li>`)
+    document.querySelector('.list').innerHTML = data.sort((a, b) => b.score - a.score)
+      .map((result) => `<li>${result.user} : ${result.score}</li>`)
       .join('');
   }
 
