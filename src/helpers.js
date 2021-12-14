@@ -49,4 +49,22 @@ export default class Helper {
       Utils.inputFocus();
     }
   }
+
+  /**
+   * @function getHandler - handles the refresh button click event
+   * @param {Event Object} e - the event object
+   */
+  async getHandler() {
+    const refresh = document.querySelector('#refresh');
+    const spin = document.querySelector('.spin');
+    try {
+      Utils.startLoader(refresh, spin);
+      const { result } = await API.get(`games/${Utils.getLocal()}/scores/`);
+      Utils.checkScores(result);
+    } catch (err) {
+      throw new Error(err);
+    } finally {
+      Utils.stopLoader(refresh, spin, 'Refresh <i class="fas fa-sync-alt">');
+    }
+  }
 }
