@@ -195,6 +195,17 @@ h2 {
   transition: top ease-out 1s 0.01s;
 }
 
+/* spinner */
+.loading-spinner {
+  animation: rotate-forever linear infinite 0.8s;
+  height: 12px;
+  width: 12px;
+  border: 2px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 @keyframes rotate-forever {
   0% {
     transform: rotate(0deg);
