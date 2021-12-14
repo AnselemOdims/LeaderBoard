@@ -111,6 +111,7 @@ h2 {
   margin: 5px 0;
   border-radius: 2px;
   font-weight: 500;
+  word-wrap: break-word;
 }
 
 /* Add Section */
@@ -183,7 +184,7 @@ h2 {
 }
 
 /* Modal */
-.modal {
+#modal {
   position: absolute;
   top: -100vh;
   left: 25%;
@@ -214,6 +215,13 @@ h2 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 /* Footer */
