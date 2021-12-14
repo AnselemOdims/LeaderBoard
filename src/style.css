@@ -41,12 +41,37 @@ main {
   margin-bottom: 20px;
 }
 
+.refresh > button {
+  padding: 5px;
+}
+
 .scores-container {
   border: solid 3px gray;
   padding: 5px;
   border-radius: 4px;
 }
 
+.add > .add-form {
+  width: 80%;
+}
+
+.add > .add-form > form {
+  display: flex;
+  flex-direction: column;
+}
+
 .add > .score-heading {
   margin-bottom: 20px;
+}
+
+.add > .add-form > form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.add > .add-form > form > button {
+  align-self: flex-end;
+  width: 30%;
+  padding: 5px;
 }
