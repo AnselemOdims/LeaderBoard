@@ -1,10 +1,16 @@
-![](https://img.shields.io/badge/LeaderBoard-blueviolet)
+![](https://img.shields.io/badge/LeaderBoard-pink)
 
 # LeaderBoard
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
-![screenshot](./src/images/screenshots/leaderboard.png)
+## Light Mode 
+
+![screenshot](./src/images/screenshots/leader-light.png)
+
+## Dark Mode
+
+![screenshot](./src/images/screenshots/leader-dark.png)
 
 Additional description about the project and its features.
 
