@@ -1,3 +1,6 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 /* Reset Styles */
 * {
   margin: 0;
@@ -5,9 +8,27 @@
   box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+  --primary-color-1: #FEE3EC;
+  --primary-color-2: #f55b8c;
+  --accent-color: #f882a7;
+  --neutral-color-1: #550f24;
+  --white: #fff;
+  --font: 'Poppins', sans-serif;
+}
+
 /* Global styles */
 html {
   overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font);
+  background: var(--primary-color-1);
+  position: relative;
+  min-height: 97vh;
 }
 
 ul > li {
@@ -16,68 +37,6 @@ ul > li {
 
 a {
   text-decoration: none;
+  color: var(--accent-color);
   cursor: pointer;
-}
-
-.error {
-  color: red;
-  font-size: 10px;
-  margin-bottom: 12px;
-}
-
-main {
-  margin: 5% 10%;
-}
-
-.main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 50px;
-  margin: 5% auto;
-}
-
-.results {
-  width: 70%;
-}
-
-.refresh-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.refresh > button {
-  padding: 5px;
-}
-
-.scores-container {
-  border: solid 3px gray;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-.add > .add-form {
-  width: 80%;
-}
-
-.add > .add-form > form {
-  display: flex;
-  flex-direction: column;
-}
-
-.add > .score-heading {
-  margin-bottom: 20px;
-}
-
-.add > .add-form > form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
-}
-
-.add > .add-form > form > button {
-  align-self: flex-end;
-  width: 30%;
-  padding: 5px;
 }
