@@ -35,4 +35,12 @@ export default class Utils {
     document.querySelector('.list').innerHTML = data.map((result) => `<li>${result.user} : ${result.score}</li>`)
       .join('');
   }
+
+  /**
+   * @function getLocal - handles getting the ID from local storage
+   * @returns {Array} - the ID string
+   */
+  static getLocal() {
+    return JSON.parse(localStorage.getItem('ID'));
+  }
 }
