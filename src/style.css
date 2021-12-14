@@ -215,3 +215,14 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: var(--neutral-color-1);
+}
