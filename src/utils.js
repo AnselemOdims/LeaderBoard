@@ -52,4 +52,13 @@ export default class Utils {
   static setLocal(id, data) {
     localStorage.setItem(id, JSON.stringify(data));
   }
+
+  /**
+   * @function generateID - handles creating a new game ID
+   * @returns {string} - the new game ID
+   */
+  static async generateID() {
+    const { result } = await API.post('games/', { name: 'My cool new game' });
+    return result.substr(14, 20);
+  }
 }
