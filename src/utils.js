@@ -78,12 +78,23 @@ export default class Utils {
    * @returns - stops operations if inputs are empty
    */
   static showModal(result) {
-    if (user.value === '' || score.value === '') return;
+    Utils.inputChecker();
     const elem = document.querySelector('.modal');
     elem.innerHTML = result;
     elem.style.top = '-7vh';
     setTimeout(() => {
       elem.style.top = '-100vh';
     }, 3000);
+  }
+
+  /**
+   * @function inputChecker - handles stopping operations if inputs are empty
+   * @returns
+   */
+  static inputChecker() {
+    if (user.value === '' || score.value === '') {
+      return null;
+    }
+    return null;
   }
 }
