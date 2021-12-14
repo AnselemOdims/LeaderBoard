@@ -19,6 +19,12 @@ a {
   cursor: pointer;
 }
 
+.error {
+  color: red;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
 main {
   margin: 5% 10%;
 }
