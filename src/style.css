@@ -10,7 +10,7 @@
 
 /* Variables */
 :root {
-  --primary-color-1: #FEE3EC;
+  --primary-color-1: #fee3ec;
   --primary-color-2: #f55b8c;
   --accent-color: #f882a7;
   --neutral-color-1: #550f24;
@@ -39,4 +39,18 @@ a {
   text-decoration: none;
   color: var(--accent-color);
   cursor: pointer;
+}
+
+/* Main General styles */
+main {
+  padding: 50px 10% 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2 {
+  color: var(--neutral-color-1);
 }
