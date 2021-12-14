@@ -181,3 +181,26 @@ h2 {
   outline: none;
   background: var(--neutral-color-1);
 }
+
+/* Modal */
+.modal {
+  position: absolute;
+  top: -100vh;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  padding: 15px 0;
+  background: #fff;
+  text-align: center;
+  transition: top ease-out 1s 0.01s;
+}
+
+@keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
