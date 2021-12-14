@@ -4,6 +4,7 @@
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
+![screenshot](./src/images/screenshots/leaderboard.png)
 
 Additional description about the project and its features.
 

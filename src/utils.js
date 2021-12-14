@@ -85,7 +85,7 @@ export default class Utils {
     elem.style.top = '5px';
     setTimeout(() => {
       elem.style.top = '-100vh';
-    }, 3000);
+    }, 3500);
   }
 
   /**
