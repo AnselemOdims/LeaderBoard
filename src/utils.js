@@ -94,9 +94,10 @@ export default class Utils {
    */
   static inputChecker() {
     if (user.value === '' || score.value === '') {
-      return null;
+      Utils.displayError('The user and score inputs can not be empty');
+    } else {
+      Utils.displayError('');
     }
-    return null;
   }
 
   /**
@@ -116,5 +117,13 @@ export default class Utils {
     } else {
       Utils.render(result);
     }
+  }
+
+  /**
+   * @function displayError - handle the display of error
+   * @param {string} value - the error string
+   */
+  static displayError(value) {
+    document.querySelector('.error').innerHTML = `${value}`;
   }
 }

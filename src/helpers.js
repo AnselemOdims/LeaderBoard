@@ -13,7 +13,7 @@ export default class Helper {
 /**
  * @function createNewGame - create new game on load
  */
-  async createNewGame() {
+  static async createNewGame() {
     if (!Utils.getLocal()) {
       try {
         const gameID = await Utils.generateID();
@@ -59,6 +59,7 @@ export default class Helper {
     const spin = document.querySelector('.spin');
     try {
       Utils.startLoader(refresh, spin);
+      await Helper.createNewGame();
       const { result } = await API.get(`games/${Utils.getLocal()}/scores/`);
       Utils.checkScores(result);
     } catch (err) {
