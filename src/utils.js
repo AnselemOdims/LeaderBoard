@@ -97,4 +97,11 @@ export default class Utils {
     }
     return null;
   }
+
+  /**
+   * @function inputFocus - handles the input focus on load
+   */
+  static inputFocus() {
+    user.focus();
+  }
 }
