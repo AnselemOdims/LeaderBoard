@@ -104,4 +104,16 @@ export default class Utils {
   static inputFocus() {
     user.focus();
   }
+
+  /**
+   * @function checkScores - checks the length of the array retrieved from the server
+   * @param {Array} result - the result array from the server
+   */
+  static checkScores(result) {
+    if (result.length === 0) {
+      document.querySelector('.list').innerHTML = '<li>No Leaderboard scores added yet</li>';
+    } else {
+      Utils.render(result);
+    }
+  }
 }
