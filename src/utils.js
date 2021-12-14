@@ -1,6 +1,8 @@
 import FetchWrapper from './fetchWrapper.js';
 
 const API = new FetchWrapper('https://us-central1-js-capstone-backend.cloudfunctions.net/api/');
+const user = document.querySelector('#name');
+const score = document.querySelector('#score');
 
 /**
  * @class Utils - the utility class to hold all utiltity functionality
@@ -60,5 +62,13 @@ export default class Utils {
   static async generateID() {
     const { result } = await API.post('games/', { name: 'My cool new game' });
     return result.substr(14, 20);
+  }
+
+  /**
+   * @function clearFields - handles clearing the input after submit
+   */
+  static clearFields() {
+    user.value = '';
+    score.value = '';
   }
 }
