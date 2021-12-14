@@ -30,6 +30,7 @@ body {
   background: var(--primary-color-1);
   position: relative;
   min-height: 97vh;
+  transition: background ease-out 1s 0.1s;
 }
 
 ul > li {
@@ -88,6 +89,7 @@ h2 {
   font-size: 1rem;
   font-family: var(--font);
   border-radius: 2px;
+  transition: background ease-out 1s 0.1s;
 }
 
 .refresh > button:hover {
@@ -148,6 +150,7 @@ h2 {
   border-left: solid 7px gray;
   font-family: var(--font);
   border-radius: 2px;
+  transition: border-left ease-out 0.3s 0.1s;
 }
 
 .add > .add-form > form input::-webkit-outer-spin-button,
@@ -176,6 +179,7 @@ h2 {
   font-size: 1rem;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px -12px;
+  transition: background ease-out 1s 0.1s;
 }
 
 .add > .add-form > form > button:hover {
@@ -261,10 +265,12 @@ footer {
 .dark {
   background: var(--neutral-color-2) !important;
   color: var(--primary-color-1) !important;
+  transition: background ease-out 0.7s 0.1s;
 }
 
 .white {
   background: var(--neutral-color-1) !important;
+  transition: background ease-out 0.7s 0.1s;
 }
 
 .input-dark {
@@ -273,6 +279,7 @@ footer {
 
 .input-dark:focus {
   border-left: solid 7px var(--neutral-color-1) !important;
+  transition: border-left ease-out 0.7s 0.1s;
 }
 
 .dark-control {
