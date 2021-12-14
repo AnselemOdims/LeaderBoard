@@ -43,4 +43,13 @@ export default class Utils {
   static getLocal() {
     return JSON.parse(localStorage.getItem('ID'));
   }
+
+  /**
+   * @function setLocal - handles setting the ID to the local storage
+   * @param {string} id - the key to set in the local storage
+   * @param {string} data - the data value to set in the local storage
+   */
+  static setLocal(id, data) {
+    localStorage.setItem(id, JSON.stringify(data));
+  }
 }
