@@ -226,3 +226,20 @@ footer {
   font-size: 14px;
   color: var(--neutral-color-1);
 }
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+    margin: 5% auto;
+  }
+
+  .results {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 11px;
+  }
+}
