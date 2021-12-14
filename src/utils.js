@@ -22,7 +22,7 @@ export default class Utils {
    * @function stopLoader - handles the stop of the spinner loading
    * @param {HTMLElement} elem1 - the first HTMLElement
    * @param {HTMLElement} elem2 - the second HTMLElement
-   * @param {string} value - the string value to insert into the DOM
+   * @param {String} value - the string value to insert into the DOM
    */
   static stopLoader(elem1, elem2, value) {
     elem2.classList.remove('loading-spinner');
@@ -48,8 +48,8 @@ export default class Utils {
 
   /**
    * @function setLocal - handles setting the ID to the local storage
-   * @param {string} id - the key to set in the local storage
-   * @param {string} data - the data value to set in the local storage
+   * @param {String} id - the key to set in the local storage
+   * @param {String} data - the data value to set in the local storage
    */
   static setLocal(id, data) {
     localStorage.setItem(id, JSON.stringify(data));
@@ -57,7 +57,7 @@ export default class Utils {
 
   /**
    * @function generateID - handles creating a new game ID
-   * @returns {string} - the new game ID
+   * @returns {String} - the new game ID
    */
   static async generateID() {
     const { result } = await API.post('games/', { name: 'My cool new game' });
@@ -70,5 +70,20 @@ export default class Utils {
   static clearFields() {
     user.value = '';
     score.value = '';
+  }
+
+  /**
+   * @function showModal - shows the modal
+   * @param {String} result - the result from the server
+   * @returns - stops operations if inputs are empty
+   */
+  static showModal(result) {
+    if (user.value === '' || score.value === '') return;
+    const elem = document.querySelector('.modal');
+    elem.innerHTML = result;
+    elem.style.top = '-7vh';
+    setTimeout(() => {
+      elem.style.top = '-100vh';
+    }, 3000);
   }
 }
