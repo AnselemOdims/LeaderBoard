@@ -4,9 +4,9 @@
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
-## Light Mode 
+## Mini Presentation
 
-![screenshot](./src/images/screenshots/leader-light.png)
+![screenshot](./src/images/screenshots/Screencast%20from%2012-15-2021%2003%2058%2047%20PM.gif)
 
 ## Dark Mode
 
