@@ -61,7 +61,7 @@ $ npm run start # this will make webpack watching for your changes in code
 $ open dist/index.html
 ```
 
-## Interaction with the leaderboard API
+## Interaction with the Leaderboard API
 - Each new game is created with the POST method using 
   ```bash
       { 
@@ -78,7 +78,7 @@ $ open dist/index.html
 >  This gameID is saved in the localStorage automatically
   
 
-  The two allowed actions are psoting of scores and getting of the scores
+  The two allowed actions are posting and getting of the scores
 - The POST request creates a new Leaderboard score for the given game sending user and score as parameters like this:
   #### Endpoint
   ```bash
